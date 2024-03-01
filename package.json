@@ -1,0 +1,56 @@
+{
+    "name": "egg-minio-typescript",
+    "version": "1.0.1",
+    "description": "minio for egg.js, typescript version",
+    "eggPlugin": {
+        "name": "minio"
+    },
+    "types": "./index.d.ts",
+    "keywords": [
+        "egg",
+        "eggPlugin",
+        "egg-plugin",
+        "minio",
+        "egg-minio",
+        "egg-minio-ts"
+    ],
+    "dependencies": {
+        "minio": "^7.1.3"
+    },
+    "devDependencies": {
+        "egg": "^3",
+        "egg-bin": "^5",
+        "egg-ci": "^2",
+        "egg-mock": "^5",
+        "eslint": "^8",
+        "eslint-config-egg": "^12"
+    },
+    "engines": {
+        "node": ">=16.0.0"
+    },
+    "scripts": {
+        "test": "npm run lint -- --fix && npm run test-local",
+        "test-local": "egg-bin test",
+        "cov": "egg-bin cov",
+        "lint": "eslint .",
+        "ci": "npm run lint && npm run cov"
+    },
+    "files": [
+        "index.d.ts",
+        "app.js",
+        "config"
+    ],
+    "ci": {
+        "version": "16, 18"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/uni-openai/egg-minio.git"
+    },
+    "bugs": {
+        "url": "https://github.com/uni-openai/egg-minio/issues"
+    },
+    "homepage": "https://github.com/uni-openai/egg-minio",
+    "author": "devilyouwei",
+    "license": "MIT"
+}
