@@ -16,7 +16,7 @@ yarn add egg-minio-typescript
 // {app_root}/config/plugin.js
 exports.minio = {
   enable: true,
-  package: 'egg-minio-typescript',
+  package: "egg-minio-typescript",
 };
 ```
 
@@ -24,16 +24,16 @@ exports.minio = {
 
 ```js
 // {app_root}/config/config.default.js
-exports.minio = {
+config.minio = {
+  client: {
     endPoint: MINIO_END_POINT,
     port: parseInt(MINIO_PORT),
     useSSL: false,
     accessKey: MINIO_ACCESS_KEY,
-    secretKey: MINIO_SECRET_KEY
+    secretKey: MINIO_SECRET_KEY,
+  },
 };
 ```
-
-see [config/config.default.js](config/config.default.js) for more detail.
 
 ## License
 
